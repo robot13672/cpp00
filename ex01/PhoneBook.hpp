@@ -5,20 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikhristi <ikhristi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 14:50:02 by ikhristi          #+#    #+#             */
-/*   Updated: 2023/11/07 14:54:17 by ikhristi         ###   ########.fr       */
+/*   Created: 2024/01/06 15:52:43 by ikhristi          #+#    #+#             */
+/*   Updated: 2024/01/06 18:53:27 by ikhristi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PHONEBOOK_HPP
-#define PHONEBOOK_HPP
+#ifndef PHONEBOOK_H
+# define PHONEBOOK_H
 
-#include "Contact.hpp"
+# include "Contact.hpp"
 
 class PhoneBook
 {
-private:
-	Contact contacts[8];
-}
+	private:
+		Contact arr[8];
+
+};
 
 #endif

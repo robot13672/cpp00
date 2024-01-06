@@ -5,30 +5,42 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikhristi <ikhristi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 20:21:30 by ikhristi          #+#    #+#             */
-/*   Updated: 2023/11/07 14:56:26 by ikhristi         ###   ########.fr       */
+/*   Created: 2024/01/06 16:09:50 by ikhristi          #+#    #+#             */
+/*   Updated: 2024/01/06 18:51:01 by ikhristi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONTACT_HPP
-#define CONTACT_HPP
+#ifndef CONTACT_H
+# define CONTACT_H
 
-#include <iostream>
-#include <iomanip>
+# include <iostream>
+# include <string>
 
 class Contact
 {
-private:
-	std::string FirsName;
-	std::string SecondName;
-	std::string PhoneNumber;
-	std::string NickName;
-	std::string DarkestSecret;
-	std::string GetInput(std::string str) const;
+	private:
+		std::string firstName;
+		std::string secondName;
+		std::string nickname;
+		std::string phoneNumber;
+		std::string darkestSecret;
 
-public:
-	void	Init(void);
-	void	ShowInfo(void);
+	public:
+		Contact();
+		~Contact();
+
+		void	set_value(std::string f, std::string s, std::string n, std::string p, std::string d);
+		void	set_firstName(std::string _firstName);
+		void	set_secondName(std::string _secondName);
+		void	set_nickName(std::string _nickName);
+		void	set_phoneNumber(std::string _phoneNumber);
+		void	set_darkestSecret(std::string _darkestSecret);
+
+		std::string get_firstName(void);
+		std::string get_secondName(void);
+		std::string get_nickName(void);
+		std::string get_phoneNumber(void);
+		std::string get_darkestSecret(void);
 };
 
 #endif
